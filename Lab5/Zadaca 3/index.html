@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadaca 3</title>
+    <link rel="stylesheet" href="jquery/jquery-ui.css">
+    <script src="jquery/jquery.js"></script>
+    <script src="jquery/jquery-ui.js"></script>
+    <script src="srcipt.js"></script>
+    <style>
+        .ui-selected { background: mediumseagreen; color: white; }
+        #selectable { list-style-type: none; margin: 0; padding: 0; width: 60%; }
+        #select{
+            width: 400px;
+        }
+
+        #selectable li{
+            margin:2px;
+            border: 1px solid black;
+        }
+        button{
+            margin-top:15px;
+            margin-bottom: 15px;
+        }
+
+        p #result, p #items{
+            margin-right:5px;
+            border-top:1px solid black;
+            border-bottom: 1px solid black;
+            background-color: palegreen;
+        }
+
+        #result{
+            padding-right: 5px;
+        }
+    </style>
+</head>
+<body>
+<p>New Item:</p>
+<input type="text" id="inputField"><br>
+<button id="addBtn">Add new Item</button>
+<button id="delete">Delete Selected Items</button>
+<div id="selectedItems">
+    <p>
+        <span id="items">Selected items:</span>
+        <span id="result"></span>
+    </p>
+</div>
+<div id="select">
+    <ul id="selectable">
+        <li class="liItem">Gaming</li>
+        <li class="liItem" >Sports</li>
+        <li class="liItem" >Watching TV</li>
+        <li class="liItem" >Sleeping</li>
+        <li class="liItem">Hiking</li>
+        <li class="liItem">Skiing</li>
+        <li class="liItem">Dancing</li>
+    </ul>
+
+</div>
+
+</body>
+</html>
+

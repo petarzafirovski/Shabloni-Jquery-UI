@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadaca 2</title>
+    <link rel="stylesheet" href="jquery/jquery-ui.css">
+    <script src="jquery/jquery.js"></script>
+    <script src="jquery/jquery-ui.js"></script>
+    <script src="script.js"></script>
+    <style>
+        .ui-selected { background: #F39814; color: white; }
+        #selectable { list-style-type: none; margin: 0; padding: 0; width: 60%; }
+        #select{
+            width: 400px;
+        }
+        #select{
+            width: 400px;
+        }
+
+        #selectable li{
+            margin:2px;
+            border: 1px solid black;
+        }
+
+        .spance{
+            color:red;
+        }
+
+        .inputError{
+            border:1px solid red;
+        }
+        label{
+            width: 100px;
+        }
+        .dv{
+            display: inline-block;
+            width: 110px;
+        }
+        button{
+            margin-top:15px;
+            margin-left: 1px;
+        }
+    </style>
+</head>
+<body>
+<div id="mainDiv">
+    <div class="childs">
+        <div class="dv"><label>Name:</label></div>
+        <input type="text" placeholder="Name..." id="name">
+        <span class="spance">Insert a name</span>
+    </div>
+    <div class="childs"></div>
+    <div class="dv"><label>Surname:</label></div>
+    <input  type="text" placeholder="Surname..." id="surname">
+    <span class="spance">Insert a surname</span>
+</div>
+<div class="childs"></div>
+<div class="dv"><label>Password:</label></div>
+<input type="password" placeholder="Password..." id="password">
+<span class="spance">Insert a password</span>
+</div>
+<div class="childs"></div>
+<div class="dv"><label>DateOfBirth:</label></div>
+<input  placeholder="Date Of Birth" id="date">
+<span class="spance">Select a date</span>
+</div>
+</div>
+
+<div id="select">
+    <p>Select your hobbies:</p>
+    <ol id="selectable">
+
+        <li >Gaming</li>
+        <li >Sports</li>
+        <li >Watching TV</li>
+        <li >Sleeping</li>
+        <li>Hiking</li>
+        <li >Skiing</li>
+        <li >Dancing</li>
+    </ol>
+    <button  type="reset" id="btn">Add my info</button>
+
+    <div id="dialog" title="User info:">
+        <p id="dialogName">Name:</p>
+        <p id="dialogSurname">Surname:</p>
+        <p id="dialogPass">Password:</p>
+        <p id="dialogDate">DateOfBirth:</p>
+        <p id="dialogHobbies">Hobbies:</p>
+    </div>
+
+</body>
+</html>
