@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadaca 2</title>
+    <link rel="stylesheet" href="jquery/jquery-ui.css">
+    <script src="jquery/jquery.js"></script>
+    <script src="jquery/jquery-ui.js"></script>
+    <script src="script.js"></script>
+    <style>
+        body{
+            margin-left:15px;
+        }
+        #bottomBar{
+            height: 50px;
+            width: 320px;
+            background-color: lightskyblue;
+            border:1px solid black;
+            clear: both;
+            position: relative;
+            top:20px;
+        }
+        #bottomBar input{
+            position: relative;
+            top:10px;
+            left:20px;
+            width: 120px;
+            margin: 5px;
+        }
+        #topBar{
+            height: 50px;
+            width: 320px;
+            background-color: lightskyblue;
+            border: 1px solid black;
+            margin-bottom: 20px;
+        }
+
+        #id1,#id2,#id3{
+            width: 40px;
+            height: 25px;
+            padding-right: 20px;
+            display: inline-block;
+            border-bottom: 2px solid blue;
+            margin-top:10px;
+            margin-left: 10px;
+        }
+
+        #id1{
+            background-color: darkorange;
+        }
+
+        #id2,#id3{
+            background-color: steelblue;
+        }
+
+        label{
+            color: white;
+            position: relative;
+            left: 12px;
+            top:3px;
+        }
+
+        #tab1,#tab2,#tab3{
+            float: left;
+        }
+
+        #selectable div{
+            border:1px solid black;
+            width: 190px;
+
+        }
+        #selectable { list-style-type: none; margin: 0; padding: 0; width: 60%; }
+        #selectable .ui-selecting { background: #FECA40; }
+        #selectable .ui-selected { background: #F39814; color: white; }
+    </style>
+</head>
+<body>
+<div id="topBar">
+    <div id="id1">
+        <label>Email</label>
+    </div>
+
+    <div id="id2">
+        <label>Sent</label>
+    </div>
+
+    <div id="id3">
+        <label>Done</label>
+    </div>
+</div>
+
+<div id="dialog" title="Set your password">
+    <p id="error" style="color: red;font-weight: bold">Passwords erros!</p>
+    <p>New password:</p>
+    <input type="password" id="pas1">
+    <p>Repeat password:</p>
+    <input type="password" id="pas2">
+</div>
+
+    <div class="panel" id="tab1" style="width: 320px; height: 470px; border:1px solid black">
+        <div style="margin-left: 15px" id="content">
+            <h1>New message:</h1>
+            <p>To:</p>
+            <input type="text" id="toWho">
+            <p>Cc:</p>
+            <input type="text" id="cc">
+            <p>Subject:</p>
+            <input type="text" id="subject">
+            <p>Content:</p>
+            <div id="contentDIV" style="width: 300px; height:100px; background-color: palegreen"></div>
+            <button style=" background-color: #ffd800; margin-top:15px;" class="ui-widget ui-button" id="insertBtn">Insert</button>
+            <button style=" background-color: #228B22; margin-top:15px;" class="ui-button ui-widget" id="sendBtn">Send</button>
+        </div>
+    </div>
+
+    <div class="panel" id="tab2" style="width: 320px; height: 470px; border:1px solid black">
+        <h1 style="margin-left: 15px;">Sent items:</h1>
+            <ol style="margin-left: 15px; overflow: scroll" class="selectable" id="selectable">
+
+            </ol>
+        <button style=" background-color: #ffd800;margin-left: 15px; margin-top:15px;" class="ui-widget ui-button" id="deleteBtn">Delete</button>
+    </div>
+
+    <div class="panel" id="tab3" style="width: 320px; height: 470px; border:1px solid black">
+        <h1 style="margin-left: 100px; margin-top:25px;">DONE</h1>
+    </div>
+
+<div id="dialog2" title="Message Content">
+
+    <p id="p1">To:</p>
+    <p id="p2">Subject:</p>
+    <p id="p3">Cc:</p>
+    <p>Content:</p>
+    <input id="contentInp" type="text" style="height: 120px;width: 200px;">
+</div>
+
+<div id="dialog3" title="Password">
+    <p id="errorPass" style="color: red; font-weight: bold">Incorrect password!</p>
+    <p>Password</p>
+    <input type="password" class="passValidation" id="passwordValidation">
+</div>
+
+<div id="bottomBar">
+    <input type="button" id="prev" value="Previous"/>
+    <input type="button" id="next" value="Next"/>
+</div>
+
+</body>
+</html>
