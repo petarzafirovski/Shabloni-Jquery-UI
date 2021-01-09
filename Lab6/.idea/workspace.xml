@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eee3c539-395d-4105-a8c9-f4ccc9ed3f72" name="Default Changelist" comment="" />
+    <list default="true" id="eee3c539-395d-4105-a8c9-f4ccc9ed3f72" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zadaca1/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Zadaca1/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zadaca2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Zadaca2/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zadaca2/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Zadaca2/script.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,7 +20,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1meQJ8xXP8EKd1zwof2m8EnVouU" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -37,6 +46,7 @@
       <updated>1609851502920</updated>
       <workItem from="1609851504285" duration="11955000" />
       <workItem from="1609928145011" duration="2708000" />
+      <workItem from="1610223285020" duration="889000" />
     </task>
     <servers />
   </component>

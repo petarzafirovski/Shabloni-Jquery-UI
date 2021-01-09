@@ -7,7 +7,7 @@ $(document).ready(function (){
         buttons:{
             OK:function (){
                 var pas = $("#pas1").val();
-                if(pas.length>=6 && pas.match(/(?=.*[!@#$%^&*])/) && pas===$("#pas2").val())
+                if(pas.length>=6 && pas.match(/(?=.*[!@#$%^&*()<>?:])/) && pas===$("#pas2").val())
                 {
                     $("#dialog").dialog( "close" );
                 }
@@ -43,10 +43,12 @@ $(document).ready(function (){
     })
 
     $("#insertBtn").click(function (){
-        $("#p1").append("<span>"+$("#toWho").val()+"</span>");
-        $("#p2").append("<span>"+$("#cc").val()+"</span>");
-        $("#p3").append("<span>"+$("#subject").val()+"</span>");
-        $("#dialog2").dialog("open");
+        if($("#toWho").val()!=="" && $("#cc").val()!=="" && $("#subject").val()!==""){
+            $("#p1").append("<span>"+$("#toWho").val()+"</span>");
+            $("#p2").append("<span>"+$("#cc").val()+"</span>");
+            $("#p3").append("<span>"+$("#subject").val()+"</span>");
+            $("#dialog2").dialog("open");
+        }
     })
 
     $("#dialog3").dialog({
